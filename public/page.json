@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "Contact Zoetis",
+    "description": "",
+    "noIndex": false,
+    "type": null,
+    "author": "",
+    "publishedTime": null,
+    "image": "",
+    "taggingInput": "",
+    "keywords": "",
+    "ogDescription": "",
+    "ogKeyword": "",
+    "customTag": null,
+    "ogTitle": "Contact Zoetis",
+    "ogImage": ""
+  },
+  "id": "/contact-us",
+  "route": {
+    "path": "/contact-us",
+    "exact": true,
+    "strict": false,
+    "priority": null,
+    "auth": {
+      "required": false,
+      "returnAfterLogin": false,
+      "userlevelAccess": []
+    },
+    "register": {
+      "returnAfterRegister": false
+    }
+  },
+  "title": "Contact Us",
+  "analytics": null,
+  "Hybris": null,
+  "components": [
+    {
+      "name": "Card",
+      "props": {
+        "children": [
+          {
+            "name": "Button",
+            "props": {
+              "text": "This is a button inside a card"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Button",
+      "props": {
+        "text": "This is a button"
+      }
+    }
+  ]
+}

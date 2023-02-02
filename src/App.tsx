@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import usePageData from "@/hooks/usePageData";
+import "./App.css";
+import useComponents from "@/hooks/useComponents";
+import AsyncRenderer from "./components/_AsyncRenderer";
 
 function App() {
+  const data = usePageData();
+  const components = useComponents(data?.components);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page" data-page-root data-json-url="/page.json">
+      <AsyncRenderer components={components} />
     </div>
   );
 }
