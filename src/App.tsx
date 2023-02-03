@@ -1,6 +1,5 @@
 import React from "react";
 import usePageData from "@/hooks/usePageData";
-import "./App.css";
 import useComponents from "@/hooks/useComponents";
 import AsyncRenderer from "./components/_AsyncRenderer";
 
@@ -9,7 +8,7 @@ function App() {
   const components = useComponents(data?.components);
 
   return (
-    <div className="page" data-page-root data-json-url="/page.json">
+    <div className="page">
       <AsyncRenderer components={components} />
     </div>
   );

@@ -2,7 +2,7 @@ import { lazy, useEffect, useState } from "react";
 import ComponentData from "@/types/ComponentData";
 import ComponentToRender from "@/types/ComponentToRender";
 
-const importComponent = async (path: string) => lazy(() => import(`@/components/${path}`));
+const importComponent = async (name: string) => lazy(() => import(`@/components/${name}/${name}`));
 
 export default function useComponents(componentsData: Array<ComponentData> | undefined) {
   const [views, setViews] = useState<ComponentToRender[] | null>(null);

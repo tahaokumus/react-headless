@@ -1,7 +1,7 @@
 import React from "react";
 import useComponents from "@/hooks/useComponents";
 import ComponentData from "@/types/ComponentData";
-import AsyncRenderer from "./_AsyncRenderer";
+import AsyncRenderer from "@/components/_AsyncRenderer";
 
 interface CardProps {
   children: Array<ComponentData>;

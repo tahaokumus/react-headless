@@ -43,6 +43,35 @@
             "props": {
               "text": "This is a button inside a card"
             }
+          },
+          {
+            "name": "Title",
+            "props": {
+              "text": "This is a title",
+              "tag": "h2",
+              "size": "small",
+              "color": "red"
+            }
+          },
+          {
+            "name": "Button",
+            "props": {
+              "text": "This is a button inside a card"
+            }
+          },
+          {
+            "name": "Title",
+            "props": {
+              "text": "This is a title with upper header",
+              "tag": "h2",
+              "size": "large",
+              "color": "red",
+              "upperTitle": {
+                "text": "This is an upper header",
+                "color": "blue",
+                "tag": "h6"
+              }
+            }
           }
         ]
       }
