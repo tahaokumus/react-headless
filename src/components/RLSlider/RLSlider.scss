@@ -1,0 +1,99 @@
+@import "@/styles/functions-mixins";
+
+section.rl-slider {
+  min-block-size: 100vh;
+  position: relative;
+
+  --img-size: #{responsive(200, 432)};
+  --slide-content-padding-y: #{responsive(40, 80)};
+  --slide-content-padding-x: #{responsive(32, 112)};
+
+  .wrapper {
+    inline-size: 100%;
+    block-size: 80vh;
+    padding-block-start: #{responsive(32, 120)};
+    position: absolute;
+    inset-block-start: 0;
+  }
+
+  .slide {
+    position: relative;
+    block-size: 100%;
+
+    .slide-content {
+      block-size: 100%;
+      inline-size: calc(100% - calc(#{responsive(200, 432)} / 2));
+
+      @include padding(var(--slide-content-padding-y), var(--slide-content-padding-x));
+
+      .title {
+        margin-block-end: 1.75rem;
+      }
+
+      .paragraph {
+        margin-block-end: #{responsive(32, 40)};
+        inline-size: 75%;
+      }
+    }
+
+    img {
+      inline-size: var(--img-size);
+      block-size: var(--img-size);
+      position: absolute;
+      inset-block-end: calc(var(--img-size) / -5);
+      inset-inline-end: 2rem;
+    }
+  }
+
+  .slide-thumbs {
+    display: flex;
+    @include padding(1.5rem, 0, 0, 0.75rem);
+
+    .thumb {
+      inline-size: 0.75rem;
+      block-size: 0.75rem;
+      border-radius: 50%;
+      background-color: white;
+      opacity: 0.3;
+      cursor: pointer;
+
+      &.active {
+        opacity: 1;
+      }
+
+      &:not(:last-child) {
+        margin-inline-end: 10px;
+      }
+    }
+  }
+}
+
+@media screen and ($br-mobile) {
+  section.rl-slider {
+    .slide {
+      .slide-content {
+        inline-size: 100%;
+
+        .title {
+          margin-block-end: 1.75rem;
+        }
+
+        .paragraph {
+          margin-block-end: #{responsive(32, 40)};
+          inline-size: 100%;
+        }
+      }
+
+      img {
+        inset-block-end: calc(var(--img-size) / -2);
+        inset-inline-end: calc((100% - var(--img-size)) / 2);
+      }
+    }
+
+    .slide-thumbs {
+      padding-block-start: calc((var(--img-size) / 2) + 2rem);
+      padding-inline-start: 0;
+      inline-size: 100%;
+    }
+  }
+}

@@ -1,8 +1,12 @@
 $mobileRes: 390;
 $desktopRes: 1440;
 
+$br-mobile: 'max-width: 768px';
+
 :root {
+  --color-gray-light: #fafafa;
   --color-gray: #fbfbfb;
+  --color-orange-border: #E4662A;
   --color-orange-light: #f65c00;
   --color-orange-dark: #ff5a00;
   --color-bg-dark: #1a1a1a;

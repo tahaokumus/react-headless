@@ -1,20 +1,4 @@
 {
-  "metadata": {
-    "title": "Contact Zoetis",
-    "description": "",
-    "noIndex": false,
-    "type": null,
-    "author": "",
-    "publishedTime": null,
-    "image": "",
-    "taggingInput": "",
-    "keywords": "",
-    "ogDescription": "",
-    "ogKeyword": "",
-    "customTag": null,
-    "ogTitle": "Contact Zoetis",
-    "ogImage": ""
-  },
   "id": "/contact-us",
   "route": {
     "path": "/contact-us",
@@ -31,55 +15,170 @@
     }
   },
   "title": "Contact Us",
-  "analytics": null,
-  "Hybris": null,
+  "lang": "en",
+  "dir": "ltr",
   "components": [
     {
-      "name": "Card",
+      "name": "RLSlider",
       "props": {
-        "children": [
+        "slides": [
           {
-            "name": "Button",
-            "props": {
-              "text": "This is a button inside a card"
-            }
-          },
-          {
-            "name": "Title",
-            "props": {
-              "text": "This is a title",
-              "tag": "h2",
-              "size": "small",
-              "color": "red"
-            }
-          },
-          {
-            "name": "Button",
-            "props": {
-              "text": "This is a button inside a card"
-            }
-          },
-          {
-            "name": "Title",
-            "props": {
-              "text": "This is a title with upper header",
-              "tag": "h2",
-              "size": "large",
-              "color": "red",
-              "upperTitle": {
-                "text": "This is an upper header",
-                "color": "blue",
-                "tag": "h6"
+            "image": "/images/RLS-1.png",
+            "alt": "Cow image",
+            "children": [
+              {
+                "name": "Title",
+                "props": {
+                  "text": "Better target treatments",
+                  "tag": "h2",
+                  "size": "medium",
+                  "color": "white",
+                  "align": "start",
+                  "upperTitle": {
+                    "text": "With Vetscan Mastigram+ in hand, your farm will",
+                    "tag": "h4",
+                    "color": "white",
+                    "align": "start",
+                    "size": "small"
+                  }
+                }
+              },
+              {
+                "name": "Paragraph",
+                "props": {
+                  "text": "The Vetscan Rapid Mastigram+ test was designed to fit the farm, not the other way around. By delivering results in eight hours, the test gives farmers the information they need to decide a cow’s mastitis treatment before the next milking. Results are easy to interpret and actionable for an entire process completed on farm, at the point of care, with minimal preparation and without expertise needed.",
+                  "size": "small",
+                  "color": "white",
+                  "align": "start"
+                }
+              },
+              {
+                "name": "CTA",
+                "props": {
+                  "text": "DISCOVER THE DIFFERENCE",
+                  "variation": "dark"
+                }
               }
-            }
+            ]
+          },
+          {
+            "image": "/images/RLS-2.png",
+            "alt": "Cow image",
+            "children": [
+              {
+                "name": "Title",
+                "props": {
+                  "text": "Reduce antimicrobial usage",
+                  "tag": "h2",
+                  "size": "medium",
+                  "color": "white",
+                  "align": "start",
+                  "upperTitle": {
+                    "text": "With Vetscan Mastigram+ in hand, your farm will:",
+                    "tag": "h4",
+                    "color": "white",
+                    "align": "start",
+                    "size": "small"
+                  }
+                }
+              },
+              {
+                "name": "Paragraph",
+                "props": {
+                  "text": "Increased regulation, higher customer expectations, and an increased focus on antimicrobial resistance (AMR) are calling for more responsible use of antimicrobials. With the data from Mastigram+, farmers and veterinarians can confidently target their treatments of mastitis cases for the health of their cows and their consumers.",
+                  "size": "small",
+                  "color": "white",
+                  "align": "start"
+                }
+              },
+              {
+                "name": "CTA",
+                "props": {
+                  "text": "HEAR TESTIMONIALS",
+                  "variation": "dark"
+                }
+              }
+            ]
+          },
+          {
+            "image": "/images/RLS-3.png",
+            "alt": "Cow image",
+            "children": [
+              {
+                "name": "Title",
+                "props": {
+                  "text": "Maximise saleable milk",
+                  "tag": "h2",
+                  "size": "medium",
+                  "color": "white",
+                  "align": "start",
+                  "upperTitle": {
+                    "text": "With Vetscan Mastigram+ in hand, your farm will:",
+                    "tag": "h4",
+                    "color": "white",
+                    "align": "start",
+                    "size": "small"
+                  }
+                }
+              },
+              {
+                "name": "Paragraph",
+                "props": {
+                  "text": "With Mastigram+ detecting Gram-positive cases, farmers can allow most non-Gram positive cases to resolve on their own and without antimicrobial treatment in just 2-3 days. This selective treatment reduces antimicrobial costs and allows a quicker return of milk to the tank - up to four days sooner - increasing the farm's volume of saleable milk.",
+                  "size": "small",
+                  "color": "white",
+                  "align": "start"
+                }
+              },
+              {
+                "name": "CTA",
+                "props": {
+                  "text": "CALCULATE YOUR SAVINGS",
+                  "variation": "dark"
+                }
+              }
+            ]
+          },
+          {
+            "image": "/images/RLS-4.png",
+            "alt": "Cow image",
+            "children": [
+              {
+                "name": "Title",
+                "props": {
+                  "text": "Fit diagnostics into the workflow",
+                  "tag": "h2",
+                  "size": "small",
+                  "color": "white",
+                  "align": "start",
+                  "upperTitle": {
+                    "text": "With Vetscan Mastigram+ in hand, your farm will:",
+                    "tag": "h4",
+                    "color": "white",
+                    "align": "start",
+                    "size": "small"
+                  }
+                }
+              },
+              {
+                "name": "Paragraph",
+                "props": {
+                  "text": "The Vetscan Rapid Mastigram+ test was designed to fit the farm, not the other way around. By delivering results in eight hours, the test gives farmers the information they need to decide a cow’s mastitis treatment before the next milking. Results are easy to interpret and actionable for an entire process completed on farm, at the point of care, with minimal preparation and without expertise needed.",
+                  "size": "small",
+                  "color": "white",
+                  "align": "start"
+                }
+              },
+              {
+                "name": "CTA",
+                "props": {
+                  "text": "SEE IT IN ACTION",
+                  "variation": "dark"
+                }
+              }
+            ]
           }
         ]
-      }
-    },
-    {
-      "name": "Button",
-      "props": {
-        "text": "This is a button"
       }
     }
   ]

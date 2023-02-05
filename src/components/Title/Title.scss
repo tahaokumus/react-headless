@@ -1,81 +1,47 @@
 @import "@/styles/variables";
-
-@function calculateSize($minSize, $maxSize, $minRes: $mobileRes, $maxRes: $desktopRes) {
-  $resDif: $maxRes - $minRes;
-  $sizeDif: $maxSize - $minSize;
-  $sizePerRes: calc($resDif / $sizeDif);
-
-  @return "clamp(#{$minSize}px, calc((max((100vw - #{$minRes}px), 0px) / #{$sizePerRes}) + #{$minSize}px), #{$maxSize}px)";
-}
+@import "@/styles/functions-mixins";
 
 .title,
 .upper-title {
   font-family: "Gotham-Medium";
   font-weight: 500;
   letter-spacing: 0;
-
-  &.align {
-    &-left {
-      text-align: left;
-    }
-    &-center {
-      text-align: center;
-    }
-    &-right {
-      text-align: right;
-    }
-  }
-
-  &.color {
-    &-white {
-      color: white;
-    }
-    &-black {
-      color: black;
-    }
-    &-orange {
-      color: var(--color-orange-dark);
-    }
-    &-gray {
-      color: var(--color-gray);
-    }
-  }
 }
 
 .title {
   --title-color-light: var(--color-gray);
   --title-color-black: #000;
 
-  margin: 0;
-  padding: 0;
+  @include margin(0);
+  @include padding(0);
 
   &.size {
     &-small {
-      font-size: #{calculateSize(28, 56)};
-      line-height: #{calculateSize(32, 64)};
+      font-size: #{responsive(28, 56)};
+      line-height: #{responsive(32, 64)};
     }
     &-medium {
-      font-size: #{calculateSize(36, 72)};
-      line-height: #{calculateSize(40, 80)};
+      font-size: #{responsive(36, 72)};
+      line-height: #{responsive(40, 80)};
     }
     &-large {
-      font-size: #{calculateSize(54, 100)};
-      line-height: #{calculateSize(64, 108)};
+      font-size: #{responsive(54, 100)};
+      line-height: #{responsive(64, 108)};
     }
   }
 }
 
 .upper-title {
-  margin-bottom: 1.25rem;
+  margin-block-end: 1rem;
 
   &.size {
     &-small {
-      font-size: #{calculateSize(12, 24)};
-      line-height: #{calculateSize(18, 48)};
+      font-size: #{responsive(12, 24)};
+      line-height: #{responsive(18, 48)};
     }
     &-medium {
-      font-size: #{calculateSize(16, 30)};
-      line-height: #{calculateSize(18, 48)};
+      font-size: #{responsive(16, 30)};
+      line-height: #{responsive(18, 48)};
     }
   }
 }

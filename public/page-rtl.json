@@ -1,0 +1,173 @@
+{
+  "id": "/contact-us",
+  "route": {
+    "path": "/contact-us",
+    "exact": true,
+    "strict": false,
+    "priority": null,
+    "auth": {
+      "required": false,
+      "returnAfterLogin": false,
+      "userlevelAccess": []
+    },
+    "register": {
+      "returnAfterRegister": false
+    }
+  },
+  "title": "Contact Us",
+  "lang": "ar",
+  "dir": "rtl",
+  "components": [
+    {
+      "name": "RLSlider",
+      "props": {
+        "slides": [
+          {
+            "image": "/images/RLS-1.png",
+            "alt": "Cow image",
+            "children": [
+              {
+                "name": "Title",
+                "props": {
+                  "text": "أفضل العلاجات المستهدفة",
+                  "tag": "h2",
+                  "size": "medium",
+                  "color": "white",
+                  "align": "left",
+                  "upperTitle": {
+                    "text": "مع وجود Vetscan Mastigram + في متناول اليد ، ستقوم مزرعتك بما يلي:",
+                    "tag": "h4",
+                    "color": "white",
+                    "align": "left",
+                    "size": "small"
+                  }
+                }
+              },
+              {
+                "name": "Paragraph",
+                "props": {
+                  "text": "تم تصميم اختبار Vetscan Rapid Mastigram + ليناسب المزرعة ، وليس العكس. من خلال تقديم النتائج في غضون ثماني ساعات ، يمنح الاختبار المزارعين المعلومات التي يحتاجونها لتحديد علاج التهاب الضرع لدى البقر قبل الحلب التالي. النتائج سهلة التفسير وقابلة للتنفيذ للعملية الكاملة المنجزة في المزرعة ، في نقطة الرعاية ، مع الحد الأدنى من الإعداد ودون الحاجة إلى الخبرة."
+                }
+              },
+              {
+                "name": "CTA",
+                "props": {
+                  "text": "اكتشف الفرق",
+                  "variation": "dark"
+                }
+              }
+            ]
+          },
+          {
+            "image": "/images/RLS-2.png",
+            "alt": "Cow image",
+            "children": [
+              {
+                "name": "Title",
+                "props": {
+                  "text": "تقليل استخدام مضادات الميكروبات",
+                  "tag": "h2",
+                  "size": "medium",
+                  "color": "white",
+                  "align": "left",
+                  "upperTitle": {
+                    "text": "مع وجود Vetscan Mastigram + في متناول اليد ، ستقوم مزرعتك بما يلي:",
+                    "tag": "h4",
+                    "color": "white",
+                    "align": "left",
+                    "size": "small"
+                  }
+                }
+              },
+              {
+                "name": "Paragraph",
+                "props": {
+                  "text": "تتطلب اللوائح المتزايدة ، وتوقعات العملاء المرتفعة ، والتركيز المتزايد على مقاومة مضادات الميكروبات (AMR) استخدامًا أكثر مسؤولية لمضادات الميكروبات. باستخدام البيانات من Mastigram + ، يمكن للمزارعين والأطباء البيطريين أن يستهدفوا بثقة علاجاتهم لحالات التهاب الضرع من أجل صحة أبقارهم ومستهلكيهم."
+                }
+              },
+              {
+                "name": "CTA",
+                "props": {
+                  "text": "شهادات السمع",
+                  "variation": "dark"
+                }
+              }
+            ]
+          },
+          {
+            "image": "/images/RLS-3.png",
+            "alt": "Cow image",
+            "children": [
+              {
+                "name": "Title",
+                "props": {
+                  "text": "تعظيم الحليب القابل للبيع",
+                  "tag": "h2",
+                  "size": "medium",
+                  "color": "white",
+                  "align": "left",
+                  "upperTitle": {
+                    "text": "مع وجود Vetscan Mastigram + في متناول اليد ، ستقوم مزرعتك بما يلي:",
+                    "tag": "h4",
+                    "color": "white",
+                    "align": "left",
+                    "size": "small"
+                  }
+                }
+              },
+              {
+                "name": "Paragraph",
+                "props": {
+                  "text": "مع اكتشاف Mastigram + لحالات إيجابية الجرام ، يمكن للمزارعين السماح لمعظم الحالات الإيجابية غير الجرام بالحل من تلقاء نفسها ودون علاج مضاد للميكروبات في غضون 2-3 أيام فقط. يقلل هذا العلاج الانتقائي من تكاليف مضادات الميكروبات ويسمح بعودة أسرع للحليب إلى الخزان - حتى أربعة أيام قبل ذلك - مما يزيد من حجم الحليب القابل للبيع في المزرعة."
+                }
+              },
+              {
+                "name": "CTA",
+                "props": {
+                  "text": "احسب مدخراتك",
+                  "variation": "dark"
+                }
+              }
+            ]
+          },
+          {
+            "image": "/images/RLS-4.png",
+            "alt": "Cow image",
+            "children": [
+              {
+                "name": "Title",
+                "props": {
+                  "text": "احتواء التشخيصات في سير العمل",
+                  "tag": "h2",
+                  "size": "small",
+                  "color": "white",
+                  "align": "left",
+                  "upperTitle": {
+                    "text": "مع وجود Vetscan Mastigram + في متناول اليد ، ستقوم مزرعتك بما يلي:",
+                    "tag": "h4",
+                    "color": "white",
+                    "align": "left",
+                    "size": "small"
+                  }
+                }
+              },
+              {
+                "name": "Paragraph",
+                "props": {
+                  "text": "تم تصميم اختبار Vetscan Rapid Mastigram + ليناسب المزرعة ، وليس العكس. من خلال تقديم النتائج في غضون ثماني ساعات ، يمنح الاختبار المزارعين المعلومات التي يحتاجونها لتحديد علاج التهاب الضرع لدى البقر قبل الحلب التالي. النتائج سهلة التفسير وقابلة للتنفيذ للعملية الكاملة المنجزة في المزرعة ، في نقطة الرعاية ، مع الحد الأدنى من الإعداد ودون الحاجة إلى الخبرة."
+                }
+              },
+              {
+                "name": "CTA",
+                "props": {
+                  "text": "شاهده في العمل",
+                  "variation": "dark"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

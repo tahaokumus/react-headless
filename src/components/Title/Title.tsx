@@ -1,9 +1,7 @@
 import React from "react";
+import { Align, Color, getAlign, getColor, getSize, Size } from "@/types/TextTypes";
 import "./Title.scss";
 
-type Color = "white" | "black" | "orange" | "gray";
-type Size = "small" | "medium" | "large";
-type Align = "left" | "center" | "right";
 type UpperTitleSize = "small" | "medium";
 
 interface UpperTitleProps {
@@ -21,18 +19,6 @@ interface TitleProps {
   color: Color;
   align: Align;
   upperTitle: UpperTitleProps | null;
-}
-
-function getColor(color: Color) {
-  return `color-${color}`;
-}
-
-function getSize(size: Size) {
-  return `size-${size}`;
-}
-
-function getAlign(align: Align) {
-  return `align-${align}`;
 }
 
 export default function Title({ text, tag, size, color, align, upperTitle }: TitleProps) {

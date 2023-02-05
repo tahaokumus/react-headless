@@ -1,0 +1,23 @@
+@import "@/styles/variables";
+@import "@/styles/functions-mixins";
+
+.paragraph {
+  font-family: "Gotham-Book";
+  @include margin(0);
+  @include padding(0);
+
+  &.size {
+    &-small {
+      font-size: #{responsive(14, 20)};
+      line-height: #{responsive(20, 28)};
+    }
+    &-medium {
+      font-size: #{responsive(18, 24)};
+      line-height: #{responsive(26, 32)};
+    }
+    &-large {
+      font-size: #{responsive(20, 36)};
+      line-height: #{responsive(26, 48)};
+    }
+  }
+}

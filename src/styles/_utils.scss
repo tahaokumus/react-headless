@@ -1,3 +1,11 @@
+@import "@/styles/functions-mixins";
+
+.container {
+  max-width: 1100px;
+  @include margin(0, auto);
+  @include padding(0, 2rem);
+}
+
 .bg {
   &-light {
     background-color: var(--color-bg-light);
@@ -10,5 +18,32 @@
   }
   &-white {
     background-color: white;
+  }
+}
+
+.align {
+  &-start {
+    text-align: start;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-end {
+    text-align: end;
+  }
+}
+
+.color {
+  &-white {
+    color: white;
+  }
+  &-black {
+    color: black;
+  }
+  &-orange {
+    color: var(--color-orange-dark);
+  }
+  &-gray {
+    color: var(--color-gray);
   }
 }
