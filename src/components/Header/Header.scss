@@ -1,0 +1,7 @@
+@import "@/styles/functions-mixins";
+
+header {
+  position: absolute;
+  inset-block-start: #{responsive(32, 64, 1100)};
+  inset-inline-start: #{responsive(32, 64, 1100)};
+}

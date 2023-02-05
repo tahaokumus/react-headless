@@ -1,5 +1,19 @@
 import { useEffect, useState, useRef, CSSProperties, useCallback } from "react";
 
+// const throttle = (func: () => void, delay: number) => {
+//   let prev = 0;
+
+//   return () => {
+//     const now = new Date().getTime();
+//     if (now - prev > delay) {
+//       prev = now;
+//       return func();
+//     }
+
+//     return null;
+//   };
+// };
+
 export default function useSliderScroll(slideCount: number) {
   const sliderRef = useRef<HTMLElement>(null);
   const [slideState, setSlideState] = useState({
@@ -18,13 +32,15 @@ export default function useSliderScroll(slideCount: number) {
     setSlideState((prev) => ({ ...prev, currentSlideIndex: index }));
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleScroll = useCallback(() => {
     if (sliderRef.current === null) return;
 
     const { scrollTop } = document.documentElement;
     const { offsetTop } = sliderRef.current;
     const index = Math.floor((scrollTop - offsetTop) / window.innerHeight);
-    console.log("index", index);
+    // console.log("index", index);
+    // console.log("scrollTop", scrollTop, "offsetTop", offsetTop);
 
     if (index < 0) {
       setSlideState((prev) => ({ ...prev, sliderPos: 0 }));

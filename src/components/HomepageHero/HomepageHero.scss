@@ -1,0 +1,18 @@
+.hero.variation-homepage {
+  // TODO: This is a temporary fix to make the homepage hero full height
+  padding-block-start: 15rem;
+  padding-block-end: 7.5rem;
+
+  background-color: var(--hero-bg-color);
+  background-image: var(--hero-bg-image);
+
+  .title {
+    width: 40%;
+    margin-block-end: 15rem;
+  }
+
+  .paragraph {
+    width: 60%;
+    margin-block-end: 4rem;
+  }
+}

@@ -1,19 +1,31 @@
 import React from "react";
-import usePageData from "@/hooks/usePageData";
+import { usePageData, useMasterData } from "@/hooks/usePageData";
 import useComponents from "@/hooks/useComponents";
-import AsyncRenderer from "./components/_AsyncRenderer";
+import AsyncRenderer from "@/components/_AsyncRenderer";
+import Header from "@/components/Header/Header";
 
 function App() {
-  const data = usePageData();
-  const components = useComponents(data?.components);
+  const pageData = usePageData();
+  const components = useComponents(pageData?.components);
 
-  if (data?.lang && data?.dir) {
-    document.querySelector("html")?.setAttribute("lang", data.lang);
-    document.querySelector("html")?.setAttribute("dir", data.dir);
+  const masterData = useMasterData();
+
+  if (masterData?.lang) {
+    document.querySelector("html")?.setAttribute("lang", masterData.lang);
+  }
+  if (masterData?.dir) {
+    document.querySelector("html")?.setAttribute("dir", masterData.dir);
   }
 
+  console.log("masterData", masterData);
+
+  const props = { ...masterData?.props?.header, theme: pageData?.theme };
   return (
     <div className="page">
+      {
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        masterData && <Header {...props} />
+      }
       <AsyncRenderer components={components} />
     </div>
   );

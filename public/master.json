@@ -1,0 +1,10 @@
+{
+  "props": {
+    "header": {
+      "lightLogo": "/images/mastigram-header-light.svg",
+      "darkLogo": "/images/mastigram-header-dark.svg"
+    }
+  },
+  "lang": "en",
+  "dir": "ltr"
+}

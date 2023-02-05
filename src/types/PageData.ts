@@ -3,7 +3,6 @@ import ComponentData from "@/types/ComponentData";
 export default interface PageData {
   path: string;
   title: string;
-  lang: string;
-  dir: string;
+  theme: string;
   components: Array<ComponentData>;
 }

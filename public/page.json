@@ -15,9 +15,43 @@
     }
   },
   "title": "Contact Us",
-  "lang": "en",
-  "dir": "ltr",
   "components": [
+    {
+      "name": "HomepageHero",
+      "props": {
+        "background": {
+          "color": "black"
+        },
+        "children": [
+          {
+            "name": "Title",
+            "props": {
+              "text": "Treat mastitis on your terms",
+              "tag": "h1",
+              "size": "large",
+              "color": "white",
+              "align": "start"
+            }
+          },
+          {
+            "name": "Paragraph",
+            "props": {
+              "text": "Vetscan Mastigram+ is the first on-farm mastitis diagnostic using a simple flow test to find Gram-positive mastitis cases in the time between milkings. By providing critical information about mastitis cases, Mastigram+ gives farmers what they need to confidently treat mastitis without wasting milk or disrupting workflows.",
+              "size": "large",
+              "color": "white",
+              "align": "start"
+            }
+          },
+          {
+            "name": "CTA",
+            "props": {
+              "text": "LEARN MORE",
+              "variation": "dark"
+            }
+          }
+        ]
+      }
+    },
     {
       "name": "RLSlider",
       "props": {
@@ -180,6 +214,10 @@
           }
         ]
       }
+    },
+    {
+      "name": "MastigramForm"
     }
-  ]
+  ],
+  "theme": "dark"
 }

@@ -94,6 +94,7 @@ section.rl-slider {
       padding-block-start: calc((var(--img-size) / 2) + 2rem);
       padding-inline-start: 0;
       inline-size: 100%;
+      justify-content: center;
     }
   }
 }

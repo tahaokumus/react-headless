@@ -35,7 +35,7 @@ export default function RLSlider({ slides }: RLSliderProps) {
   return (
     <section
       className="rl-slider bg-black"
-      style={{ height: `${slides.length * 100}vh`, marginTop: "100vh", marginBottom: "250vh" }}
+      style={{ height: `${slides.length * 100}vh` }}
       ref={sliderRef}
     >
       <div className="wrapper" style={wrapperStyle}>
