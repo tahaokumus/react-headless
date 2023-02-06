@@ -1,0 +1,154 @@
+@import "@/styles/functions-mixins";
+
+footer {
+  background-color: var(--color-orange-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include padding(4rem, 4rem, 6rem);
+
+  .logo-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-inline-end: 8rem;
+
+    .zoetis-logo {
+      margin-inline-end: 3rem;
+    }
+  }
+
+  .links {
+    display: flex;
+    align-items: flex-start;
+
+    .link-group {
+      &:not(:last-child) {
+        margin-inline-end: 3rem;
+      }
+
+      &-title {
+        font-weight: bold;
+        font-family: "Gotham-Bold";
+        font-size: 13px;
+        line-height: 17px;
+
+        color: var(--color-gray);
+        margin-block-end: 1.25rem;
+      }
+
+      ul,
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li:not(:last-child) {
+        margin-block-end: 1rem;
+      }
+
+      a,
+      p {
+        font-weight: 500;
+        font-family: "Gotham-Medium";
+        font-size: 13px;
+        line-height: 17px;
+        color: white;
+
+        text-decoration: none;
+
+        &:visited {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and ($br-smaller-than-desktop) {
+  footer {
+    flex-direction: column-reverse;
+    @include padding(2.5rem, 2.5rem, 4rem);
+
+    .logo-wrapper {
+      flex-direction: column;
+      margin-inline-end: 0;
+      margin-block-start: 6.5rem;
+      .zoetis-logo {
+        margin-inline-end: 0;
+        margin-block-end: 2.5rem;
+      }
+    }
+
+    .links {
+      flex-direction: column;
+
+      .link-group {
+        margin-inline-end: 0;
+
+        &:not(:last-child) {
+          margin-inline-end: 0;
+        }
+
+        &:first-child {
+          .link-group-title {
+            padding-block-start: 0;
+            padding-block-end: 1.5rem;
+          }
+        }
+
+        &:last-child li:last-child:after {
+          border-block-end: none;
+        }
+
+        &-title {
+          font-size: 18px;
+          line-height: 24px;
+          margin-block-end: 0;
+          @include padding(1.5rem, 0);
+        }
+
+        li:not(:last-child) {
+          margin-block-end: 0;
+        }
+
+        li {
+          position: relative;
+          inline-size: 100%;
+          @include padding(1.5rem, 0);
+
+          &:before,
+          &:after {
+            content: "";
+            display: block;
+            inline-size: 100vw;
+
+            position: absolute;
+            inset-inline-start: -2.5rem;
+          }
+
+          &:before {
+            inset-block-start: 0;
+            border-block-start: 1px solid white;
+          }
+          &:after {
+            inset-block-end: 0;
+          }
+
+          &:last-child {
+            &:after {
+              border-block-end: 1px solid white;
+            }
+          }
+        }
+
+        a,
+        p {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

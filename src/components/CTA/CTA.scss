@@ -15,7 +15,12 @@
   background-clip: padding-box;
   cursor: pointer;
 
-  @include padding(1rem, calc(1.25rem + 1rem + 0.75rem), 1rem, 25px);
+  &:not(.no-arrow) {
+    @include padding(1rem, calc(1.25rem + 1rem + 0.75rem), 1rem, 1.5rem);
+  }
+  &.no-arrow {
+    @include padding(1rem, 1.5rem);
+  }
 
   border-radius: 26px;
 

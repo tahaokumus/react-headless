@@ -8,9 +8,15 @@ interface ParagraphProps {
   color: Color;
   align: Align;
 }
+function fixColor(text: string) {
+  return text.replace("color: #ff6600", "color: var(--color-orange-light)");
+}
 
 export default function Paragraph({ text, size, color, align }: ParagraphProps) {
   const titleClassName = ["paragraph", getColor(color), getSize(size), getAlign(align)].join(" ");
 
-  return <p className={titleClassName}>{text}</p>;
+  const t = { __html: fixColor(text) };
+
+  // eslint-disable-next-line react/no-danger
+  return <p className={titleClassName} dangerouslySetInnerHTML={t} />;
 }

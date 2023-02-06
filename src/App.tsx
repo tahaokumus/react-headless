@@ -3,6 +3,7 @@ import { usePageData, useMasterData } from "@/hooks/usePageData";
 import useComponents from "@/hooks/useComponents";
 import AsyncRenderer from "@/components/_AsyncRenderer";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 function App() {
   const pageData = usePageData();
@@ -17,16 +18,19 @@ function App() {
     document.querySelector("html")?.setAttribute("dir", masterData.dir);
   }
 
-  console.log("masterData", masterData);
+  const headerProps = { ...masterData?.props?.header, theme: pageData?.theme };
 
-  const props = { ...masterData?.props?.header, theme: pageData?.theme };
   return (
     <div className="page">
       {
         // eslint-disable-next-line react/jsx-props-no-spreading
-        masterData && <Header {...props} />
+        masterData?.props?.header && <Header {...headerProps} />
       }
       <AsyncRenderer components={components} />
+      {
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        masterData?.props?.footer && <Footer {...masterData?.props?.footer} />
+      }
     </div>
   );
 }

@@ -6,45 +6,45 @@
       "navLink": [
         {
           "type": "menu",
-          "text": "WHY VETSCAN MASTIGRAM+",
+          "text": "لماذا VETSCAN MASTIGRAM +",
           "menu": [
             {
-              "text": "The Gram-Positive and Negative Difference",
+              "text": "الفرق الموجب للجرام والسالب",
               "link": "/"
             },
             {
-              "text": "Guide to Country Regulations",
+              "text": "دليل لوائح الدولة",
               "link": "/"
             }
           ]
         },
         {
           "type": "menu",
-          "text": "SEE IT IN ACTION",
+          "text": "شاهده في العمل",
           "menu": [
             {
-              "text": "How it Works",
+              "text": "كيف تعمل",
               "link": "/"
             }
           ]
         },
         {
           "type": "menu",
-          "text": "FOR VETERINARIANS",
+          "text": "للأطباء البيطريين",
           "menu": [
             {
-              "text": "The Potential of Diagnostics",
+              "text": "إمكانات التشخيص",
               "link": "/"
             },
             {
-              "text": "Mastitis Management Program",
+              "text": "برنامج إدارة التهاب الضرع",
               "link": "/"
             }
           ]
         },
         {
           "type": "link",
-          "text": "SAVINGS CALCULATOR",
+          "text": "حاسبة التوفير",
           "url": "/"
         }
       ]
@@ -54,55 +54,55 @@
       "mastigramLogo": "/images/mastigram-footer-logo.svg",
       "footerLinks": [
         {
-          "title": "WHY MASTIGRAM+",
+          "title": "لماذا MASTIGRAM +",
           "links": [
             {
-              "text": "The Gram-Positive and <br> Negative Difference",
+              "text": "الفرق الموجب للجرام والسالب",
               "link": "/"
             },
             {
-              "text": "Savings Calculator",
+              "text": "حاسبة التوفير",
               "link": "/"
             },
             {
-              "text": "Guide to Country <br> Regulations",
+              "text": "دليل لوائح الدولة",
               "link": "/"
             }
           ]
         },
         {
-          "title": "SEE IT IN ACTION",
+          "title": "شاهده في العمل",
           "links": [
             {
-              "text": "How it Works",
+              "text": "كيف تعمل",
               "link": "/"
             }
           ]
         },
         {
-          "title": "FOR VETERINARIANS",
+          "title": "للأطباء البيطريين",
           "links": [
             {
-              "text": "The Potential of Diagnostics",
+              "text": "إمكانات التشخيص",
               "link": "/"
             },
             {
-              "text": "Mastitis Management <br> Program",
+              "text": "برنامج إدارة التهاب الضرع",
               "link": "/"
             }
           ]
         },
         {
-          "title": "CONTACT US",
+          "title": "اتصل بنا",
           "links": [
             {
-              "text": "Address <br> Phone Number <br /> Email"
+              "text": "العنوان <br> رقم الهاتف <br> البريد الإلكتروني"
             }
           ]
         }
       ]
     }
   },
-  "lang": "en",
-  "dir": "ltr"
+  "lang": "ar",
+  "dir": "rtl"
 }

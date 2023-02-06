@@ -2,6 +2,214 @@
 
 header {
   position: absolute;
-  inset-block-start: #{responsive(32, 64, 1100)};
-  inset-inline-start: #{responsive(32, 64, 1100)};
+  --header-padding: #{responsive(32, 64, 1100)};
+  inset-block-start: var(--header-padding);
+  inset-inline-start: var(--header-padding);
+  inline-size: calc(100% - (var(--header-padding) * 2));
+
+  display: flex;
+  justify-content: space-between;
+
+  &.dark {
+    color: white;
+  }
+
+  &.light {
+    color: black;
+  }
+
+  nav {
+    .hamburger {
+      display: none;
+    }
+
+    button {
+      all: unset;
+    }
+
+    button,
+    a,
+    a.cta {
+      font-size: 0.75rem;
+      line-height: 1;
+      font-weight: bold;
+      font-family: "Gotham-Bold";
+      text-decoration: none;
+      cursor: pointer;
+
+      &:visited {
+        color: inherit;
+      }
+
+      &:hover {
+        color: var(--color-orange-light);
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    & > ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & > li {
+        position: relative;
+        line-height: 3rem;
+        &:not(:last-child) {
+          margin-inline-end: 1.5rem;
+        }
+      }
+    }
+
+    .menu {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--color-bg-dark);
+
+      inline-size: 13rem;
+
+      @include padding(1.5rem);
+
+      &:not(.active) {
+        display: none;
+      }
+
+      li {
+        line-height: 1rem;
+
+        &:not(:last-child) {
+          padding-block-end: 1.25rem;
+          border-bottom: 1px solid var(--color-bg-light);
+        }
+
+        &:not(:first-child) {
+          padding-block-start: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and ($br-smaller-than-desktop) {
+  header {
+    nav {
+      .hamburger {
+        position: absolute;
+        inset-inline-end: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        cursor: pointer;
+        inline-size: 1.5rem;
+        block-size: 1.5rem;
+        z-index: 99;
+
+        &:hover span {
+          background-color: var(--color-orange-light);
+        }
+
+        span {
+          position: absolute;
+          transition: 0.2s ease-in-out;
+
+          display: block;
+          block-size: 2px;
+          background-color: var(--color-gray);
+          inline-size: 1.5rem;
+
+          &:first-child {
+            inset-block-start: 0;
+          }
+
+          &:nth-child(2) {
+            inline-size: 1rem;
+            inset-block-start: 0.5rem;
+          }
+
+          &:last-child {
+            inset-block-start: 1rem;
+          }
+        }
+      }
+
+      &.expanded .hamburger {
+        span {
+          &:first-child {
+            transform: rotate(45deg);
+            inset-block-start: 0.5rem;
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:last-child {
+            transform: rotate(-45deg);
+            inset-block-start: 0.5rem;
+          }
+        }
+      }
+
+      &:not(.expanded) > ul {
+        display: none;
+      }
+
+      &.expanded > ul {
+        position: fixed;
+        z-index: 98;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        overflow: scroll;
+
+        padding-block-start: 5.5rem;
+        padding-block-end: 2rem;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        & > li {
+          margin-inline-end: 0;
+          inline-size: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          @include padding(3rem, 0, 0);
+
+          border-block-start: 1px solid var(--color-gray);
+
+          .menu {
+            display: flex;
+            inline-size: 100%;
+            position: static;
+            background-color: black;
+            padding: 0;
+
+            li {
+              @include padding(3rem, 0);
+
+              border-block-start: 1px solid var(--color-gray);
+              border-block-end: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              &:first-child {
+                margin-block-start: 3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
