@@ -1,7 +1,7 @@
 import React from "react";
 import useNavbar from "@/hooks/useNavbar";
 
-interface HeaderProps {
+export interface HeaderProps {
   theme: string;
   lightLogo: string;
   darkLogo: string;
@@ -9,8 +9,8 @@ interface HeaderProps {
     {
       type: "link" | "menu";
       text: string;
+      url: string;
       menu: [{ text: string; link: string }] | null;
-      url: string | null;
     },
   ];
 }
@@ -50,14 +50,14 @@ export default function Header({ theme, lightLogo, darkLogo, navLink }: HeaderPr
                 </a>
               ) : (
                 <>
-                  <button
-                    type="button"
+                  <a
+                    href={link.url}
                     className="nav-link"
                     id={`nav-${index + 1}`}
                     onClick={onMenuClick}
                   >
                     {link.text}
-                  </button>
+                  </a>
                   {link.menu?.length && (
                     <ul
                       id={`nav-menu-${index + 1}`}

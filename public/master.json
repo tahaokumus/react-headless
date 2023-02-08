@@ -6,6 +6,7 @@
       {
         "type": "menu",
         "text": "WHY VETSCAN MASTIGRAM+",
+        "url": "/",
         "menu": [
           {
             "text": "The Gram-Positive and Negative Difference",
@@ -20,6 +21,7 @@
       {
         "type": "menu",
         "text": "SEE IT IN ACTION",
+        "url": "/",
         "menu": [
           {
             "text": "How it Works",
@@ -30,6 +32,7 @@
       {
         "type": "menu",
         "text": "FOR VETERINARIANS",
+        "url": "/",
         "menu": [
           {
             "text": "The Potential of Diagnostics",
