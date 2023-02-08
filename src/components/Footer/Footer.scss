@@ -5,7 +5,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
+  overflow: hidden;
+  
   @include padding(4rem, 4rem, 6rem);
 
   .logo-wrapper {

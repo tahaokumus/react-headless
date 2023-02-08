@@ -3,7 +3,6 @@ import ComponentData from "@/types/ComponentData";
 import useComponents from "@/hooks/useComponents";
 import AsyncRenderer from "@/components/_AsyncRenderer";
 import useSliderScroll from "@/hooks/useSliderScroll";
-import "./RLSlider.scss";
 
 interface SlideProps {
   image: string;

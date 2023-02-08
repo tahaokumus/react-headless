@@ -1,107 +1,105 @@
 {
-  "props": {
-    "header": {
-      "lightLogo": "/images/mastigram-header-light.svg",
-      "darkLogo": "/images/mastigram-header-dark.svg",
-      "navLink": [
-        {
-          "type": "menu",
-          "text": "WHY VETSCAN MASTIGRAM+",
-          "menu": [
-            {
-              "text": "The Gram-Positive and Negative Difference",
-              "link": "/"
-            },
-            {
-              "text": "Guide to Country Regulations",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "type": "menu",
-          "text": "SEE IT IN ACTION",
-          "menu": [
-            {
-              "text": "How it Works",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "type": "menu",
-          "text": "FOR VETERINARIANS",
-          "menu": [
-            {
-              "text": "The Potential of Diagnostics",
-              "link": "/"
-            },
-            {
-              "text": "Mastitis Management Program",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "type": "link",
-          "text": "SAVINGS CALCULATOR",
-          "url": "/"
-        }
-      ]
-    },
-    "footer": {
-      "zoetisLogo": "/images/zoetis-footer-logo.svg",
-      "mastigramLogo": "/images/mastigram-footer-logo.svg",
-      "footerLinks": [
-        {
-          "title": "WHY MASTIGRAM+",
-          "links": [
-            {
-              "text": "The Gram-Positive and <br> Negative Difference",
-              "link": "/"
-            },
-            {
-              "text": "Savings Calculator",
-              "link": "/"
-            },
-            {
-              "text": "Guide to Country <br> Regulations",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "title": "SEE IT IN ACTION",
-          "links": [
-            {
-              "text": "How it Works",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "title": "FOR VETERINARIANS",
-          "links": [
-            {
-              "text": "The Potential of Diagnostics",
-              "link": "/"
-            },
-            {
-              "text": "Mastitis Management <br> Program",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "title": "CONTACT US",
-          "links": [
-            {
-              "text": "Address <br> Phone Number <br /> Email"
-            }
-          ]
-        }
-      ]
-    }
+  "header": {
+    "lightLogo": "/images/mastigram-header-light.svg",
+    "darkLogo": "/images/mastigram-header-dark.svg",
+    "navLink": [
+      {
+        "type": "menu",
+        "text": "WHY VETSCAN MASTIGRAM+",
+        "menu": [
+          {
+            "text": "The Gram-Positive and Negative Difference",
+            "link": "/"
+          },
+          {
+            "text": "Guide to Country Regulations",
+            "link": "/"
+          }
+        ]
+      },
+      {
+        "type": "menu",
+        "text": "SEE IT IN ACTION",
+        "menu": [
+          {
+            "text": "How it Works",
+            "link": "/"
+          }
+        ]
+      },
+      {
+        "type": "menu",
+        "text": "FOR VETERINARIANS",
+        "menu": [
+          {
+            "text": "The Potential of Diagnostics",
+            "link": "/"
+          },
+          {
+            "text": "Mastitis Management Program",
+            "link": "/"
+          }
+        ]
+      },
+      {
+        "type": "link",
+        "text": "SAVINGS CALCULATOR",
+        "url": "/"
+      }
+    ]
+  },
+  "footer": {
+    "zoetisLogo": "/images/zoetis-footer-logo.svg",
+    "mastigramLogo": "/images/mastigram-footer-logo.svg",
+    "footerLinks": [
+      {
+        "title": "WHY MASTIGRAM+",
+        "links": [
+          {
+            "text": "The Gram-Positive and <br> Negative Difference",
+            "link": "/"
+          },
+          {
+            "text": "Savings Calculator",
+            "link": "/"
+          },
+          {
+            "text": "Guide to Country <br> Regulations",
+            "link": "/"
+          }
+        ]
+      },
+      {
+        "title": "SEE IT IN ACTION",
+        "links": [
+          {
+            "text": "How it Works",
+            "link": "/"
+          }
+        ]
+      },
+      {
+        "title": "FOR VETERINARIANS",
+        "links": [
+          {
+            "text": "The Potential of Diagnostics",
+            "link": "/"
+          },
+          {
+            "text": "Mastitis Management <br> Program",
+            "link": "/"
+          }
+        ]
+      },
+      {
+        "title": "CONTACT US",
+        "links": [
+          {
+            "text": "Address <br> Phone Number <br /> Email"
+          }
+        ]
+      }
+    ]
   },
   "lang": "en",
   "dir": "ltr"

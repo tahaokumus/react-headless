@@ -1,107 +1,105 @@
 {
-  "props": {
-    "header": {
-      "lightLogo": "/images/mastigram-header-light.svg",
-      "darkLogo": "/images/mastigram-header-dark.svg",
-      "navLink": [
-        {
-          "type": "menu",
-          "text": "لماذا VETSCAN MASTIGRAM +",
-          "menu": [
-            {
-              "text": "الفرق الموجب للجرام والسالب",
-              "link": "/"
-            },
-            {
-              "text": "دليل لوائح الدولة",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "type": "menu",
-          "text": "شاهده في العمل",
-          "menu": [
-            {
-              "text": "كيف تعمل",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "type": "menu",
-          "text": "للأطباء البيطريين",
-          "menu": [
-            {
-              "text": "إمكانات التشخيص",
-              "link": "/"
-            },
-            {
-              "text": "برنامج إدارة التهاب الضرع",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "type": "link",
-          "text": "حاسبة التوفير",
-          "url": "/"
-        }
-      ]
-    },
-    "footer": {
-      "zoetisLogo": "/images/zoetis-footer-logo.svg",
-      "mastigramLogo": "/images/mastigram-footer-logo.svg",
-      "footerLinks": [
-        {
-          "title": "لماذا MASTIGRAM +",
-          "links": [
-            {
-              "text": "الفرق الموجب للجرام والسالب",
-              "link": "/"
-            },
-            {
-              "text": "حاسبة التوفير",
-              "link": "/"
-            },
-            {
-              "text": "دليل لوائح الدولة",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "title": "شاهده في العمل",
-          "links": [
-            {
-              "text": "كيف تعمل",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "title": "للأطباء البيطريين",
-          "links": [
-            {
-              "text": "إمكانات التشخيص",
-              "link": "/"
-            },
-            {
-              "text": "برنامج إدارة التهاب الضرع",
-              "link": "/"
-            }
-          ]
-        },
-        {
-          "title": "اتصل بنا",
-          "links": [
-            {
-              "text": "العنوان <br> رقم الهاتف <br> البريد الإلكتروني"
-            }
-          ]
-        }
-      ]
-    }
+  "header": {
+    "lightLogo": "/images/mastigram-header-light.svg",
+    "darkLogo": "/images/mastigram-header-dark.svg",
+    "navLink": [
+      {
+        "type": "menu",
+        "text": "لماذا VETSCAN MASTIGRAM +",
+        "menu": [
+          {
+            "text": "الفرق الموجب للجرام والسالب",
+            "link": "/"
+          },
+          {
+            "text": "دليل لوائح الدولة",
+            "link": "/"
+          }
+        ]
+      },
+      {
+        "type": "menu",
+        "text": "شاهده في العمل",
+        "menu": [
+          {
+            "text": "كيف تعمل",
+            "link": "/"
+          }
+        ]
+      },
+      {
+        "type": "menu",
+        "text": "للأطباء البيطريين",
+        "menu": [
+          {
+            "text": "إمكانات التشخيص",
+            "link": "/"
+          },
+          {
+            "text": "برنامج إدارة التهاب الضرع",
+            "link": "/"
+          }
+        ]
+      },
+      {
+        "type": "link",
+        "text": "حاسبة التوفير",
+        "url": "/"
+      }
+    ]
+  },
+  "footer": {
+    "zoetisLogo": "/images/zoetis-footer-logo.svg",
+    "mastigramLogo": "/images/mastigram-footer-logo.svg",
+    "footerLinks": [
+      {
+        "title": "لماذا MASTIGRAM +",
+        "links": [
+          {
+            "text": "الفرق الموجب للجرام والسالب",
+            "link": "/"
+          },
+          {
+            "text": "حاسبة التوفير",
+            "link": "/"
+          },
+          {
+            "text": "دليل لوائح الدولة",
+            "link": "/"
+          }
+        ]
+      },
+      {
+        "title": "شاهده في العمل",
+        "links": [
+          {
+            "text": "كيف تعمل",
+            "link": "/"
+          }
+        ]
+      },
+      {
+        "title": "للأطباء البيطريين",
+        "links": [
+          {
+            "text": "إمكانات التشخيص",
+            "link": "/"
+          },
+          {
+            "text": "برنامج إدارة التهاب الضرع",
+            "link": "/"
+          }
+        ]
+      },
+      {
+        "title": "اتصل بنا",
+        "links": [
+          {
+            "text": "العنوان <br> رقم الهاتف <br> البريد الإلكتروني"
+          }
+        ]
+      }
+    ]
   },
   "lang": "ar",
   "dir": "rtl"

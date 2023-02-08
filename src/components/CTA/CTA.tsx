@@ -1,5 +1,4 @@
 import React from "react";
-import "./CTA.scss";
 
 type CTAVariation = "dark" | "orange" | "outline-orange";
 

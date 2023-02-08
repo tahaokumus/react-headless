@@ -3,7 +3,6 @@ import ComponentData from "@/types/ComponentData";
 import AsyncRenderer from "@/components/_AsyncRenderer";
 import { Color } from "@/types/TextTypes";
 import React from "react";
-import "./HomepageHero.scss";
 
 interface HomepageBackground {
   color?: Color;

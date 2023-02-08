@@ -1,0 +1,15 @@
+.lang-btn {
+  all: unset;
+  position: absolute;
+  inset-block-start: 1rem;
+  inset-inline-end: 50%;
+  color: white;
+  background-color: black;
+  font-family: "Gotham-Bold";
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-orange-light);
+  }
+}

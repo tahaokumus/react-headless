@@ -1,6 +1,5 @@
 import React from "react";
 import useNavbar from "@/hooks/useNavbar";
-import "./Header.scss";
 
 interface HeaderProps {
   theme: string;

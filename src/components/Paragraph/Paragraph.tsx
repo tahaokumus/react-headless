@@ -1,6 +1,5 @@
 import React from "react";
 import { Align, Color, getAlign, getColor, getSize, Size } from "@/types/TextTypes";
-import "./Paragraph.scss";
 
 interface ParagraphProps {
   text: string;

@@ -3,3 +3,11 @@
 @import "./styles/functions-mixins";
 @import "./styles/fonts";
 @import "./styles/utils";
+
+@import "@/components/CTA/CTA.scss";
+@import "@/components/Footer/Footer.scss";
+@import "@/components/Header/Header.scss";
+@import "@/components/HomepageHero/HomepageHero.scss";
+@import "@/components/Paragraph/Paragraph.scss";
+@import "@/components/RLSlider/RLSlider.scss";
+@import "@/components/Title/Title.scss";
