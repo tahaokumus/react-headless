@@ -8,8 +8,17 @@
   font-family: "Gotham-Bold";
   font-weight: bold;
   cursor: pointer;
+  z-index: 999;
 
   &:hover {
     color: var(--color-orange-light);
   }
+}
+
+[dir="ltr"] .lang-btn {
+  transform: translateX(50%);
+}
+
+[dir="rtl"] .lang-btn {
+  transform: translateX(-50%);
 }

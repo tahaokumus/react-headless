@@ -1,51 +1,45 @@
+import React from "react";
 import useComponents from "@/hooks/useComponents";
 import ComponentData from "@/types/ComponentData";
 import AsyncRenderer from "@/components/_AsyncRenderer";
-import { Color } from "@/types/TextTypes";
-import React from "react";
-
-interface HomepageBackground {
-  color?: Color;
-  image?: string;
-  video?: string;
-}
+import useHomepageHeroAnimation from "@/hooks/useHomepageHeroAnimation";
+import ComponentToRender from "@/types/ComponentToRender";
 
 interface HomepageHeroProps {
-  background: HomepageBackground;
+  animation: {
+    handImage: string;
+    tubeImage: string;
+    bgImage: string;
+  };
+
   children: Array<ComponentData>;
 }
 
-function getBackground(background: HomepageBackground) {
-  if (background.color) {
-    return {
-      "--hero-bg-color": background.color,
-    };
-  }
-
-  if (background.image) {
-    return {
-      "--hero-bg-image": `url(${background.image})`,
-    };
-  }
-
-  if (background.video) {
-    return {
-      "--hero-bg-video": `url(${background.video})`,
-    };
-  }
-
-  return {};
-}
-
-export default function Paragraph({ background, children }: HomepageHeroProps) {
-  const backgroundStyle = getBackground(background) as React.CSSProperties;
+export default function Paragraph({ animation, children }: HomepageHeroProps) {
+  const { handImageRef } = useHomepageHeroAnimation();
 
   const components = useComponents(children);
 
+  // We want to render the hand animation betweeen the first and second component
+  const firstComponent = components ? [components.at(0) as ComponentToRender] : null;
+  const restOfTheComponents = components?.slice(1) ?? null;
+
   return (
-    <section className="hero variation-homepage" style={backgroundStyle}>
+    <section className="hero variation-homepage">
       <div className="container">
-        <AsyncRenderer components={components} />
+        <AsyncRenderer components={firstComponent} />
+        <div className="animation-container">
+          <img
+            ref={handImageRef}
+            src={animation.handImage}
+            alt=""
+            role="presentation"
+            className="hand"
+          />
+          <img src={animation.tubeImage} alt="" role="presentation" className="tube" />
+          <img src={animation.bgImage} alt="" role="presentation" className="bg" />
+        </div>
+        <AsyncRenderer components={restOfTheComponents} />
       </div>
     </section>
   );

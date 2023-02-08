@@ -2,6 +2,7 @@
 
 header {
   position: absolute;
+  z-index: 99;
   --header-padding: #{responsive(32, 64, 1100)};
   inset-block-start: var(--header-padding);
   inset-inline-start: var(--header-padding);

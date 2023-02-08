@@ -4,6 +4,10 @@
 @import "./styles/fonts";
 @import "./styles/utils";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @import "@/components/CTA/CTA.scss";
 @import "@/components/Footer/Footer.scss";
 @import "@/components/Header/Header.scss";

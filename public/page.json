@@ -19,8 +19,10 @@
     {
       "name": "HomepageHero",
       "props": {
-        "background": {
-          "color": "black"
+        "animation": {
+          "handImage": "/images/hand-and-stick-cropped.png",
+          "tubeImage": "/images/tube-cropped.png",
+          "bgImage": "/images/homepage-hero-shape.svg"
         },
         "children": [
           {

@@ -1,18 +1,107 @@
+@import "@/styles/functions-mixins";
+
 .hero.variation-homepage {
   // TODO: This is a temporary fix to make the homepage hero full height
   padding-block-start: 15rem;
-  padding-block-end: 7.5rem;
+  padding-block-end: 5rem;
 
-  background-color: var(--hero-bg-color);
-  background-image: var(--hero-bg-image);
+  position: relative;
+  background-color: black;
 
   .title {
-    width: 40%;
+    inline-size: 40%;
     margin-block-end: 15rem;
   }
 
   .paragraph {
-    width: 60%;
+    inline-size: 60%;
     margin-block-end: 4rem;
+  }
+
+  .animation-container {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    padding-block-start: 5rem;
+    inline-size: 30vw;
+    block-size: 100%;
+
+    img {
+      position: absolute;
+    }
+
+    .hand {
+      will-change: transform;
+      transform: translateY(var(--translate-y, 0));
+    }
+
+    .tube {
+      position: absolute;
+      inline-size: 6.5vw;
+      inset-block-end: 0;
+      inset-inline-start: 1rem;
+    }
+
+    .bg {
+      max-width: unset;
+      max-inline-size: unset;
+      inline-size: 75vw;
+      aspect-ratio: 1;
+      inset-block-start: 12rem;
+      inset-inline-end: -31vw;
+    }
+  }
+}
+
+@media screen and ($br-mobile) {
+  .hero.variation-homepage {
+    .container {
+      position: relative;
+    }
+
+    .title {
+      inline-size: 100%;
+      margin-block-end: 0;
+    }
+
+    .paragraph {
+      inline-size: 100%;
+      margin-block-start: 4rem;
+    }
+
+    .animation-container {
+      position: relative;
+      margin-inline-start: auto;
+      inset-inline-end: -2rem;
+      padding-block-start: 0;
+
+      .hand {
+        position: static;
+      }
+
+      .tube {
+        position: relative;
+        inset-inline-start: 7px;
+      }
+
+      .bg {
+        inline-size: 130vw;
+        inset-block-start: 0;
+        inset-inline-end: -50vw;
+      }
+    }
+  }
+}
+
+[dir="rtl"] .hero.variation-homepage {
+  .animation-container {
+    .hand {
+      transform: scaleX(-1) translateY(var(--translate-y, 0));
+    }
+
+    .tube,
+    .bg {
+      transform: scaleX(-1);
+    }
   }
 }
