@@ -45,7 +45,7 @@ export default function Header({ theme, lightLogo, darkLogo, navLink }: HeaderPr
               onMouseLeave={handleMouseLeave}
             >
               {link.type === "link" ? (
-                <a href={link.url ?? ""} className="cta cta-dark no-arrow">
+                <a href={link.url ?? ""} className="cta no-arrow">
                   {link.text}
                 </a>
               ) : (

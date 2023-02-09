@@ -13,10 +13,22 @@ header {
 
   &.dark {
     color: white;
+
+    nav .cta {
+      color: var(--color-gray-light);
+      border-color: rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
   }
 
   &.light {
     color: black;
+
+    nav .cta {
+      color: black;
+      background-color: transparent;
+      border-color: black;
+    }
   }
 
   nav {
@@ -28,7 +40,6 @@ header {
       all: unset;
     }
 
-    button,
     a,
     a.cta {
       font-size: 0.75rem;
@@ -41,9 +52,19 @@ header {
       &:visited {
         color: inherit;
       }
+    }
 
+    a {
       &:hover {
         color: var(--color-orange-light);
+      }
+    }
+
+    a.cta {
+      &:hover {
+        color: white;
+        border-color: var(--color-orange-light);
+        background-color: var(--color-orange-light);
       }
     }
 
@@ -82,6 +103,7 @@ header {
 
       li {
         line-height: 1rem;
+        color: white;
 
         &:not(:last-child) {
           padding-block-end: 1.25rem;

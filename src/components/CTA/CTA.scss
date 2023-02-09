@@ -16,7 +16,8 @@
   cursor: pointer;
 
   &:not(.no-arrow) {
-    @include padding(1rem, calc(1.25rem + 1rem + 0.75rem), 1rem, 1.5rem);
+    // calc(1.25rem + 1rem + 1rem) -> 1.25rem (arrow block end padding) + 1rem (arrow size) + 1rem (arrow block start padding)
+    @include padding(1rem, calc(1.25rem + 1rem + 1rem), 1rem, 1.5rem);
   }
   &.no-arrow {
     @include padding(1rem, 1.5rem);

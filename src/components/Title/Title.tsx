@@ -1,14 +1,11 @@
 import React from "react";
 import { Align, Color, getAlign, getColor, getSize, Size } from "@/types/TextTypes";
 
-type UpperTitleSize = "small" | "medium";
-
 interface UpperTitleProps {
   text: string;
   tag: keyof JSX.IntrinsicElements;
   color: Color;
   align: Align;
-  size: UpperTitleSize;
 }
 
 interface TitleProps {
@@ -28,12 +25,9 @@ export default function Title({ text, tag, size, color, align, upperTitle }: Tit
 
   if (upperTitle) {
     const UpperTitleTag = upperTitle.tag;
-    const className = [
-      "upper-title",
-      getColor(upperTitle.color),
-      getAlign(upperTitle.align),
-      getSize(upperTitle.size),
-    ].join(" ");
+    const className = ["upper-title", getColor(upperTitle.color), getAlign(upperTitle.align)].join(
+      " ",
+    );
 
     return (
       <>

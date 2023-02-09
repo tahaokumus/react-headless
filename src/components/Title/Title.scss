@@ -16,32 +16,19 @@
   @include padding(0);
 
   &.size {
-    &-small {
-      font-size: #{responsive(28, 56)};
-      line-height: #{responsive(32, 64)};
-    }
     &-medium {
-      font-size: #{responsive(36, 72)};
-      line-height: #{responsive(40, 80)};
+      font-size: #{responsive(30, 70)};
+      line-height: #{responsive(44, 84)};
     }
     &-large {
-      font-size: #{responsive(54, 100)};
-      line-height: #{responsive(64, 108)};
+      font-size: #{responsive(60, 100)};
+      line-height: #{responsive(72, 120)};
     }
   }
 }
 
 .upper-title {
   margin-block-end: 1rem;
-
-  &.size {
-    &-small {
-      font-size: #{responsive(12, 24)};
-      line-height: #{responsive(18, 48)};
-    }
-    &-medium {
-      font-size: #{responsive(16, 30)};
-      line-height: #{responsive(18, 48)};
-    }
-  }
+  font-size: #{responsive(12, 24)};
+  line-height: #{responsive(18, 48)};
 }
